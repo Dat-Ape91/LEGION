@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = ('ODIyMDgzNDU3MTM5NjA1NTI0.YFNG4Q._keaIrUOgjZn3t4Sz_Xk9ogtHZk');
+const token = ('ODIyMDgzNDU3MTM5NjA1NTI0.YFNG4Q.ZfKAe9-qM4TjeONqvsUA8_EbgJA');
 
 client.once('ready', () => {
    console.log('félicitation, LEGION à vu le jour!');
