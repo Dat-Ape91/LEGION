@@ -7,10 +7,11 @@ client.once('ready', () => {
 });
 
 client.on("message", message => {
-  if(!message.content.startsWith(prefixcmd) || message.author.bot) return;
-  
-  if (message.content ===  prefixcmd + "ping") {
-      message.channel.send("Pong.")
+  if(message.author.bot) return;
+  if(!message.content.startsWith(prefixcmd)) return;
+
+  if (message.content ===  prefixcmd + "cavaetretoutnoir") {
+      message.reply ("TA GUEULE!") 
     }
   })
 
