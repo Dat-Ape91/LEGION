@@ -10,7 +10,7 @@ client.on("message", message => {
   if (message.author.bot) return;
 
   if (message.content.startsWith(prefixcmd + "cavaetretoutnoir")) {
-    message.channel.send (message.reply + "TA GUEULE!");
+    message.reply ("TA GUEULE!");
     }
   })
 
