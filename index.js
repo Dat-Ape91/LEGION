@@ -8,7 +8,6 @@ client.once('ready', () => {
 
 client.on("message", message => {
   if (message.author.bot) return;
-  if (!message.content.startsWith(prefixcmd)) return;
 
   if (message.content ===  prefixcmd + "cavaetretoutnoir") {
     message.reply ("TA GUEULE!");
