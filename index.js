@@ -11,7 +11,7 @@ client.on("message", message => {
   if(!message.content.startsWith(prefixcmd)) return;
 
   if (message.content ===  prefixcmd + "cavaetretoutnoir") {
-      message.reply ("TA GUEULE!") 
+      message.reply("TA GUEULE!");
     }
   })
 
