@@ -8,11 +8,7 @@ client.once('ready', () => {
 
 client.on("message", message => {
   if(!message.content.startsWith(prefixcmd) || message.author.bot) return;
-
-  const commandbody = message.content.slice(prefixcmd.lenght);
-  const args = commandbody.split(' ');
-  const command = args.shift().toLowerCase();
-
+  
   if (message.content ===  prefixcmd + "ping") {
       message.channel.send("Pong.")
     }
