@@ -10,6 +10,10 @@ client.once('ready', () => {
 client.on("message", message => {
   if (message.author.bot) return;
 
+  if (message.content.startsWith(prefixcmd + "mr1")) {
+    message.reply ("tu as activé la mission ressources 1, bonne chance!");
+    }
+
   if (message.content.startsWith(prefixcmd + "cavaetretoutnoir")) {
     message.reply ("TA GUEULE!");
     }
