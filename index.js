@@ -12,6 +12,9 @@ client.on("message", message => {
   if (message.content.startsWith(prefixcmd + "cavaetretoutnoir")) {
     message.reply ("TA GUEULE!");
     }
+  if (message.author.user.id(789215824912580648).startsWith(prefixcmd + "cavaetretoutrouge")) {
+    message.reply ("Comme ton vaisseau, qui au passage est BADASS!");
+    }  
   })
 
 client.login(process.env.TOKEN);
