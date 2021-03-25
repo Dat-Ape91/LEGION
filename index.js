@@ -12,9 +12,10 @@ client.on("message", message => {
   if (message.content.startsWith(prefixcmd + "cavaetretoutnoir")) {
     message.reply ("TA GUEULE!");
     }
-  if (message.author.guildmember.id(682745227924340739).startsWith(prefixcmd + "cavaetretoutrouge")) {
-    message.reply ("Comme ton vaisseau, qui au passage est BADASS!");
-    }  
-  })
+    if (message.content.startsWith(prefixcmd + "cavaetretoutrouge")) {
+      message.reply ("Comme le vaisseau de Joh BARD qui au passage est trop BADASS!");
+      }
+
+});
 
 client.login(process.env.TOKEN);
