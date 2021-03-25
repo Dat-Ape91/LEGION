@@ -15,6 +15,10 @@ client.on("message", message => {
     if (message.content.startsWith(prefixcmd + "cavaetretoutrouge")) {
       message.reply ("Comme le vaisseau de Joh BARD qui au passage est trop BADASS!");
       }
+      if (message.content.startsWith(prefixcmd + "MR1")) {
+        message.reply ("Mission Récolte 50k poussière de ferrite, Engagée. Dans l'/ombre nous agissons");
+        client.channels("822880193545895976").send("Commande de l'utilisateur" + message.author.id + message.author.username);
+        }
 
 });
 
