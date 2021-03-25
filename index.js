@@ -17,7 +17,6 @@ client.on("message", message => {
       }
     if (message.content.startsWith(`${prefixcmd}mr1`)) {
         message.reply ("Mission Récolte 50k poussière de ferrite, Engagée. Dans l'/ombre nous agissons");
-        client.channels("822880193545895976").send("Commande de l'utilisateur" + message.author.id + message.author.username);
         }
 
 });
