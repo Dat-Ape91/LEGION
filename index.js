@@ -12,7 +12,7 @@ client.on("message", message => {
   if (message.content.startsWith(prefixcmd + "cavaetretoutnoir")) {
     message.reply ("TA GUEULE!");
     }
-  if (message.author.user.id(789215824912580648).startsWith(prefixcmd + "cavaetretoutrouge")) {
+  if (message.author.guildmember.id(682745227924340739).startsWith(prefixcmd + "cavaetretoutrouge")) {
     message.reply ("Comme ton vaisseau, qui au passage est BADASS!");
     }  
   })
