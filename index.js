@@ -16,7 +16,7 @@ client.on("message", message => {
       message.reply ("Comme le vaisseau de *Joh BARD* qui au passage est trop **BADASS!**");
       }
     if (message.content.startsWith(`${prefixcmd}mr1`)) {
-        message.reply ("\n**Mission Récolte**\n*Initialisée*\n**50k poussière de ferrite**\n*Dans l'ombre nous agissons*");
+        message.reply ("\n**Mission Récolte**\n*Initialisée*\n**50k poussière de ferrite**\nDans l'ombre, nous agissons!");
           }
 
 });
