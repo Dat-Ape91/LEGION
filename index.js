@@ -13,7 +13,7 @@ client.on("message", message => {
     message.reply ("TA GUEULE!");
     }
     if (message.content.startsWith(prefixcmd + "cavaetretoutrouge")) {
-      message.reply ("```diffComme le vaisseau de **Joh BARD** qui au passage est trop **BADASS!**```");
+      message.reply ("```diff-Comme le vaisseau de Joh BARD qui au passage est trop BADASS!```");
       }
     if (message.content.startsWith(`${prefixcmd}mr1`)) {
         message.reply ("Mission Récolte **50k poussière de ferrite**, Engagée. *Dans l'ombre nous agissons*");
