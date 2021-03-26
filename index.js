@@ -16,10 +16,10 @@ client.on("message", message => {
       message.reply ("\nComme le vaisseau de *Joh BARD*\nqui au passage,\nest trop **BADASS!**");
   }
   if (message.content.startsWith(prefixcmd + "quiveutunmeme")) {
-    message.reply ("\nJuste un Doigt *Wolf*");
+    message.reply ("\nJuste un Doigt");
   }
   if (message.content.startsWith(prefixcmd + "tuveuxpasunmemedabord")) {
-    message.reply ("\nOk *Wolf\nTu es le dieu du meme,\nnous te vénérons.");
+    message.reply ("\nOk\n*Wolf* est le dieu du meme,\nnous te vénérons.");
   } 
   if (message.content.startsWith(prefixcmd + "hellomother")) {
       message.reply ("\n*Ripley*, Planète **LV-426-Acheron** à proximitée,\n---*présence de parasites xenomorphes detectée*---\nMerci de vérifier combinaison et soute de ton vaisseau à ton retour.");
