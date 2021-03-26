@@ -13,11 +13,12 @@ client.on("message", message => {
     message.reply ("TA GUEULE!");
     }
     if (message.content.startsWith(prefixcmd + "cavaetretoutrouge")) {
-      message.reply ("Comme le vaisseau de **Joh BARD** qui au passage est trop **BADASS!**");
+      message.reply (```diff
+      - "Comme le vaisseau de **Joh BARD** qui au passage est trop **BADASS!**"
+      ```);
       }
     if (message.content.startsWith(`${prefixcmd}mr1`)) {
-        message.reply ("Mission Récolte **50k poussière de ferrite**, Engagée. *Dans l'ombre nous agissons*") +
-        message.channels.id('822880193545895976').send (mssage.Author.username + 'Mission récolte engagée');
+        message.reply ("Mission Récolte **50k poussière de ferrite**, Engagée. *Dans l'ombre nous agissons*");
         
         }
 
