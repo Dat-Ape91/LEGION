@@ -10,7 +10,7 @@ client.on("message", message => {
   if (message.author.bot) return;
 
   if (message.content.startsWith(prefixcmd + "cavaetretoutnoir")) {
-    message.reply ("**TA GUEULE!**");
+    message.reply ("\n**TA GUEULE!**");
   }
   if (message.content.startsWith(prefixcmd + "cavaetretoutrouge")) {
       message.reply ("\nComme le vaisseau de *Joh BARD*\nqui au passage,\nest trop **BADASS!**");
