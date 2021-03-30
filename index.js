@@ -29,7 +29,7 @@ client.on("message", message => {
 
 client.on("message", message => {
  if (message.content.startsWith(`${prefixcmd}mr1`)) {
-     client.channels("822127955370836018").send("\n**Mission Récolte**\n---*Initialisée*---\n**50k poussière de ferrite**\n---*En attente de validation*---\nDans l'ombre, nous agissons!" + message.author.username);
+    Discord.Client.channels("822127955370836018").send("\n**Mission Récolte**\n---*Initialisée*---\n**50k poussière de ferrite**\n---*En attente de validation*---\nDans l'ombre, nous agissons!" + message.author.username);
   } 
 
 });
