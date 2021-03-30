@@ -22,16 +22,11 @@ client.on("message", message => {
     message.reply ("\nOk\n*Wolf* est le dieu du meme,\nnous le vénérons.");
   } 
   if (message.content.startsWith(prefixcmd + "hellomother")) {
-      message.reply ("\n*Ripley*, Planète **LV-426-Acheron** à proximitée,\n---*présence de parasites xenomorphes detectée*---\nMerci de vérifier combinaison et soute de ton vaisseau à ton retour.");
+    message.reply ("\n*Ripley*, Planète **LV-426-Acheron** à proximitée,\n---*présence de parasites xenomorphes detectée*---\nMerci de vérifier combinaison et soute de ton vaisseau à ton retour.");
   }
-
-});
-
-client.on("message", message => {
-
-  if (message.content.startsWith(`${prefixcmd}mr1`)) {
-    Message.channels("822127955370836018").send("\n**Mission Récolte**\n---*Initialisée*---\n**50k poussière de ferrite**\n---*En attente de validation*---\nDans l'ombre, nous agissons!" + message.author.username);
-  } 
+  if (message.content.startsWith(prefixcmd + "mr1")) {
+    Discord.TeamMember.guild.channels.cache.find(channel => channel.id --- "822880193545895976").send("\n**Mission Récolte de ressources** \n---*Initialisée*--- \n**50 K poussière de ferrite");
+  }
 
 });
 
