@@ -31,7 +31,7 @@ client.on("message", message => {
     if (message.author.bot) return;
 
   if (message.content.startsWith(`${prefixcmd}mr1`)) {
-     client.channels.get('822127955370836018').send("\n**Mission Récolte**\n---*Initialisée*---\n**50k poussière de ferrite**\n---*En attente de validation*---\nDans l'ombre, nous agissons!");
+     client.channels.get(822127955370836018).send("\n**Mission Récolte**\n---*Initialisée*---\n**50k poussière de ferrite**\n---*En attente de validation*---\nDans l'ombre, nous agissons!");
   }
 
 });
