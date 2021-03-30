@@ -24,8 +24,14 @@ client.on("message", message => {
   if (message.content.startsWith(prefixcmd + "hellomother")) {
       message.reply ("\n*Ripley*, Planète **LV-426-Acheron** à proximitée,\n---*présence de parasites xenomorphes detectée*---\nMerci de vérifier combinaison et soute de ton vaisseau à ton retour.");
   }
+
+});
+
+client.on("message", message => {
+    if (message.author.bot) return;
+
   if (message.content.startsWith(`${prefixcmd}mr1`)) {
-      message.reply ("\n**Mission Récolte**\n---*Initialisée*---\n**50k poussière de ferrite**\n---*En attente de validation*---\nDans l'ombre, nous agissons!");
+     client.channels.get('822127955370836018').send("\n**Mission Récolte**\n---*Initialisée*---\n**50k poussière de ferrite**\n---*En attente de validation*---\nDans l'ombre, nous agissons!");
   }
 
 });
