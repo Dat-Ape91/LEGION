@@ -6,6 +6,12 @@ client.once('ready', () => {
    console.log('félicitation, LEGION à vu le jour!');
 });
 
+client.on("guildMemberAdd", member => {
+  bot.channels.cache.get(`821889905633394691`).send(`bienvenue au sein du Black Squadron!\n ${member}\n**Dans l\'ombre, nous agissons**`);
+  member.roles.add('823570094461419591');
+
+})
+
 client.on("message", message => {
   if (message.author.bot) return;
 
