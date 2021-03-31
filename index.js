@@ -10,10 +10,26 @@ client.on("guildMemberAdd", member => {
   bot.channels.cache.get(`821889905633394691`).send(`bienvenue au sein du Black Squadron!\n ${member}\n**Dans l\'ombre, nous agissons**`);
   member.roles.add('823570094461419591');
 
-})
+});
 
 client.on("message", message => {
   if (message.author.bot) return;
+
+  if (message.content.startsWith(prefixcmd + "clear")) {
+  message.delete();
+    if(message.member.hasPermission('MANAGE_MESSAGES')){
+
+      let args = message.content.trim().split(/ +/g);
+
+      if(args[1]){
+        if(!isNaN(args[0]) && args[1] >= 1 && args[1] <= 99){
+
+          message.channel.bulkDelete(args[1])
+
+        }
+      }
+    }
+  }
 
   if (message.content.startsWith(prefixcmd + "cavaetretoutnoir")) {
     message.reply ("\n**TA GUEULE!**");
