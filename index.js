@@ -7,7 +7,7 @@ client.once('ready', () => {
 });
 
 client.on('guildMemberAdd', async member => {
-  const channel = member.guild.channels.cache.get('821889905633394691');
+  const channel = member.guild.channels.cache.get(`821889905633394691`);
   if (!channel) return;
 
   channel.send("Bienvenue au sein du Black squadron !")
