@@ -7,12 +7,12 @@ client.once('ready', () => {
 });
 
 client.on('guildMemberAdd', async member => {
-  const channel = member.guild.channels.cache.get(`821889905633394691`);
-  if (!channel) return;
+  let bienvenue = client.guilds.cache.get("821889905633394688").channels.cache.get("821889905633394691")
 
-  channel.send("Bienvenue au sein du Black squadron !")
-  member.roles.add(`823570094461419591`);
+  member.roles.add("823570094461419591")
 
+  bienvenue.send(`bienvenue au sein du Black squadron ${member}`)
+  
 });
 
 client.on('guildMemberRemove', member => {
