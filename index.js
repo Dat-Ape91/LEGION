@@ -7,13 +7,13 @@ client.once('ready', () => {
 });
 
 client.on('guildMemberAdd', member => {
-  client.guild.channels.get(`821889905633394691`).send(message.author.tag + "Bienvenue au sein du Black squadron!");
+  client.channels.get(`821889905633394691`).send(`${member} + "Bienvenue au sein du Black squadron!"`);
   member.roles.add(`823570094461419591`);
 
 });
 
 client.on('guildMemberRemove', member => {
-  client.guild.channels.get(`821889905633394691`).send(message.author.tag + "a faiblement lâché les Blacks!");
+  client.channels.get(`821889905633394691`).send(`${member} + "a faiblement lâché les Blacks!"`);
 
 });
 
