@@ -15,14 +15,14 @@ client.on("guildMemberAdd", member => {
 client.on("message", message => {
   if (message.author.bot) return;
 
-  if (message.content.startsWith(prefixcmd + "clear")) {
+  if (message.content.startsWith(prefixcmd + "clear")){
   message.delete();
     if(message.member.hasPermission('MANAGE_MESSAGES')){
 
       let args = message.content.trim().split(/ +/g);
 
       if(args[1]){
-        if(!isNaN(args[0]) && args[1] >= 1 && args[1] <= 99){
+        if(!isNaN(args[1]) && args[1] >= 1 && args[1] <= 99){
 
           message.channel.bulkDelete(args[1])
 
