@@ -46,22 +46,29 @@ client.on("message", message => {
     }
   }
   if (message.content.startsWith(prefixcmd + "cavaetretoutrouge")) {
-      message.reply ("\nComme le vaisseau de *Joh BARD*\nqui au passage,\nest trop **BADASS!**");
+    if(message.member.hasPermission('MANAGE_MESSAGES')){
+    message.reply ("\nComme le vaisseau de *Joh BARD*\nqui au passage,\nest trop **BADASS!**");
+    }
   }
   if (message.content.startsWith(prefixcmd + "quiveutunmeme")) {
+    if(message.member.hasPermission('MANAGE_MESSAGES')){
     message.reply ("\nJuste un Doigt");
+    }
   }
   if (message.content.startsWith(prefixcmd + "tuveuxpasunmemedabord")) {
+    if(message.member.hasPermission('MANAGE_MESSAGES')){
     message.reply ("\nOk\n*Wolf* est le dieu du meme,\nnous le vénérons.");
+    }
   } 
   if (message.content.startsWith(prefixcmd + "hellomother")) {
+    if(message.member.hasPermission('MANAGE_MESSAGES')){
     message.reply ("\n*Ripley*, Planète **LV-426-Acheron** à proximitée,\n---*présence de parasites xenomorphes detectée*---\nMerci de vérifier combinaison et soute de ton vaisseau à ton retour.");
+    }
   }
   if (message.content.startsWith(prefixcmd + "mr1")) {
     message.delete();
     client.channels.cache.get(`822127955370836018`).send(message.author.tag + "\n**Mission Récolte de ressources** \n---*Initialisée*--- \n**50 K poussière de ferrite**");
-    client.channels.cache.get(`822880193545895976`).send(message.author.tag + "Mission 50 k ferrite en cours");
-    
+    client.channels.cache.get(`822880193545895976`).send(message.author.tag + " Mission 50 k ferrite en cours.");
   }
 
 });
