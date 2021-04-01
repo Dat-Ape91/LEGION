@@ -7,12 +7,12 @@ client.once('ready', () => {
 });
 
 client.on("guildMemberAdd", member => {
-  member.guild.channels.cache.find(channel => channel.id === "821889905633394691").send(member.displayName + "Tu es maintenant un soldat du Black squadron!");
+  member.guild.channels.cache.find(channel => channel.id === "821889905633394691").send(member.displayName + "\nTu es maintenant un soldat du Black squadron!");
   member.roles.add("823570094461419591");
 });
 
 client.on("guildMemberRemove", member => {
-  member.guild.channels.cache.find(channel => channel.id === "821889905633394691").send(member.displayName + "nous à lâchement quitté!");
+  member.guild.channels.cache.find(channel => channel.id === "821889905633394691").send(member.displayName + "\nnous à lâchement quitté!");
 
 });
 
