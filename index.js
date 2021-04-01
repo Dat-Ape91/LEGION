@@ -67,8 +67,8 @@ client.on("message", message => {
   }
   if (message.content.startsWith(prefixcmd + "mr1")) {
     message.delete();
-    client.channels.cache.get(`822127955370836018`).send(message.author.tag + "\n**Mission Récolte de ressources** \n---*Initialisée*--- \n**50 K poussière de ferrite**");
-    client.channels.cache.get(`822880193545895976`).send(message.author.tag + " Mission 50 k ferrite en cours.");
+    client.channels.cache.get(`822127955370836018`).send(message.author.tag + "\n**Mission Récolte de ressources** \n---*Initialisée*--- \n**50 K poussière de ferrite**\n---*En attente de livraison*---");
+    client.channels.cache.get(`822880193545895976`).send(message.author.tag + " ---*Mission 50 k ferrite en cours*---");
   }
 
 });
