@@ -7,7 +7,7 @@ client.once('ready', () => {
 });
 
 client.on("guildMemberAdd", member => {
-  member.guild.channels.cache.find(channel => channel.id === "821889905633394691").send("**Soldat** " + member.displayName + ", bienvenue dans le **Black squadron** ! Ici se trouve l'élite des mercenaires.\n\nPour intégrer les **Forces Spéciales Blacks**, tu devras prouver ta valeur et surtout ta motivation.\n\nMontre nous que tu es digne d'être ici, et tu seras récompensé au delà de tes attentes.\n\nCe sera difficile, et seuls les plus méritants pourrons intégrer l'élite et être appelés **Blacks** !\n\n**Dans l'ombre, nous agissons !** ");
+  member.guild.channels.cache.find(channel => channel.id === "821889905633394691").send("**Soldat** " + member.displayName + ", bienvenue dans le **Black squadron** ! Ici se trouve l'élite des mercenaires.\n\nPour intégrer les **Forces Spéciales Blacks**, tu devras prouver ta valeur et surtout ta motivation.\nMontre nous que tu es digne d'être ici, et tu seras récompensé au delà de tes attentes.\nCe sera difficile, et seuls les plus méritants pourrons intégrer l'élite et être appelés **Blacks** !\n\n**Dans l'ombre, nous agissons !** ");
   member.roles.add("823570094461419591").then(mbr => {
       console.log("Rôle attribué avec succès pour" + member.displayName);
   }).catch(() => {
@@ -17,7 +17,7 @@ client.on("guildMemberAdd", member => {
 });
 
 client.on("guildMemberRemove", member => {
-  member.guild.channels.cache.find(channel => channel.id === "821889905633394691").send(member.displayName + "\nAlors **bleubite**, tu roules des mécaniques devant tes potes, mais tu te caches derrière maman quand il faut se battre ?\n\n Et bien fais ton pactage et retournes dans ses jupons !");
+  member.guild.channels.cache.find(channel => channel.id === "821889905633394691").send(member.displayName + "\n\nAlors **bleubite**, tu roules des mécaniques devant tes potes, mais tu te caches derrière maman quand il faut se battre ?\n\n Et bien fais ton pactage et retournes dans ses jupons !");
 
 });
 
