@@ -7,13 +7,13 @@ client.once('ready', () => {
 });
 
 client.on("guildMemberAdd", member => {
-  member.guild.channels.cache.find(channel => channel.id === "821889905633394691").send(member.displayName + "\n**Soldat**, bienvenue dans le **Black squadron** !\nIci se trouve l'élite des mercenaires.\nPour intégrer les **Forces Spéciales Blacks**, tu devras prouver ta valeur et surtout ta motivation.\nMontre nous que tu es digne d'être ici, et tu seras récompensé au delà de tes attentes.\nCe sera difficile, et seuls les plus méritants pourrons intégrer l'élite et être appelés **Blacks** !");
+  member.guild.channels.cache.find(channel => channel.id === "821889905633394691").send(member.displayName + member.id + "\n**Soldat**, bienvenue dans le **Black squadron** !\nIci se trouve l'élite des mercenaires.\nPour intégrer les **Forces Spéciales Blacks**, tu devras prouver ta valeur et surtout ta motivation.\nMontre nous que tu es digne d'être ici, et tu seras récompensé au delà de tes attentes.\nCe sera difficile, et seuls les plus méritants pourrons intégrer l'élite et être appelés **Blacks** !");
   member.roles.add("823570094461419591");
   
 });
 
 client.on("guildMemberRemove", member => {
-  member.guild.channels.cache.find(channel => channel.id === "821889905633394691").send(member.displayName + "\nAlors **bleubite**, tu roules des mécaniques devant tes potes, mais tu te caches derrière maman quand il faut se battre ?\n\n Et bien fais ton pactage et retournes dans ses jupons !");
+  member.guild.channels.cache.find(channel => channel.id === "821889905633394691").send(member.displayName + member.id + "\nAlors **bleubite**, tu roules des mécaniques devant tes potes, mais tu te caches derrière maman quand il faut se battre ?\n\n Et bien fais ton pactage et retournes dans ses jupons !");
 
 });
 
