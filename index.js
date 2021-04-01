@@ -41,7 +41,9 @@ client.on("message", message => {
   }
 
   if (message.content.startsWith(prefixcmd + "cavaetretoutnoir")) {
+    if(message.member.hasPermission('MANAGE_MESSAGES')){
     message.reply ("\n**TA GUEULE!**");
+    }
   }
   if (message.content.startsWith(prefixcmd + "cavaetretoutrouge")) {
       message.reply ("\nComme le vaisseau de *Joh BARD*\nqui au passage,\nest trop **BADASS!**");
