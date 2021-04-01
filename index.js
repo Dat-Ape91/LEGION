@@ -6,17 +6,13 @@ client.once('ready', () => {
    console.log('félicitation, LEGION à vu le jour!');
 });
 
-client.on('guildMemberAdd', async member => {
-  let bienvenue = client.guilds.cache.get("821889905633394688").channels.cache.get("821889905633394691")
+client.on("guildMemberAdd", member => {
+  member.guild.channels.cache.find(channel => channel.id === "821889905633394691").send("Bienvenue au sein du Black squadron!");
 
-  member.roles.add("823570094461419591")
-
-  bienvenue.send(`bienvenue au sein du Black squadron ${member}`)
-  
 });
 
-client.on('guildMemberRemove', member => {
-  client.channels.get(`821889905633394691`).send(`${member} + "a faiblement lâché les Blacks!"`);
+client.on("guildMemberRemove", member => {
+  member.guild.channels.cache.find(channel => channel.id === "821889905633394691").send("nous à lâchement quitté!");
 
 });
 
