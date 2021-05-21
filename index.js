@@ -144,19 +144,19 @@ client.on('messageReactionAdd', async (messageReaction, user, message) => {
                     if(messageReact.content.startsWith("!cs")) {
                         db.get("Infos_membres").find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1] += 350}).write();
                     };
-                    if(messageReact.content.startsWith("!B-Def")) {
+                    if(messageReact.content.startsWith("!bdef")) {
                         db.get("Infos_membres").find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1] += 600}).write();
                     };
-                    if(messageReact.content.startsWith("!B-Exp")) {
+                    if(messageReact.content.startsWith("!bexp")) {
                         db.get("Infos_membres").find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1] += 800}).write();
                     };
-                    if(messageReact.content.startsWith("!B-Mon")) {
+                    if(messageReact.content.startsWith("!bmon")) {
                         db.get("Infos_membres").find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1] += 1200}).write();
                     };
-                    if(messageReact.content.startsWith("!B-Sab")) {
+                    if(messageReact.content.startsWith("!bsab")) {
                         db.get("Infos_membres").find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1] += 1400}).write();
                     };
-                    if(messageReact.content.startsWith("!B-War")) {
+                    if(messageReact.content.startsWith("!bwar")) {
                         db.get("Infos_membres").find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1] += 1600}).write();
                     };
                         // ajout et retrait de role et niveaux =>
