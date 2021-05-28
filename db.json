@@ -1,28 +1,53 @@
 {
   "Infos_membres": [
+    //dux
     {
       "user": "682745227924340739",
       "xp": 42200,
       "niveau": 71,
       "xp_p_niveau": 42800
     },
+    //joh bard
     {
       "user": "789215824912580648",
       "xp": 42200,
       "niveau": 71,
       "xp_p_niveau": 42800
     },
+    //monkey beat
     {
-      "user": "575676135946321930",
-      "xp": 42200,
-      "niveau": 71,
-      "xp_p_niveau": 42800
+      "user": "673415816859090954",
+      "xp": 650,
+      "niveau": 2,
+      "xp_p_niveau": 800
     },
+    //mazout
     {
-      "user": "490555902274043904",
-      "xp": 42200,
-      "niveau": 71,
-      "xp_p_niveau": 42800
+      "user": "507142137100632075",
+      "xp": 5950,
+      "niveau": 11,
+      "xp_p_niveau": 6200
+    },
+    //izaytox
+    {
+      "user": "809518067448414241",
+      "xp": 3150,
+      "niveau": 6,
+      "xp_p_niveau": 3200
+    },
+    //doc
+    {
+      "user": "286628356491968522",
+      "xp": 1350,
+      "niveau": 3,
+      "xp_p_niveau": 1400
+    },
+    //oxy
+    {
+      "user": "411542266218545163",
+      "xp": 500,
+      "niveau": 2,
+      "xp_p_niveau": 800
     }
   ]
 }
